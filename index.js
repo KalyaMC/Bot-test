@@ -6,13 +6,11 @@ function loadConfig(path) {
     return JSON.parse(fs.readFileSync(path, {encoding: "utf8"}));
 }
 
-let botConfigs=loadConfig(process.argv[2]);
+let wbotConfigs=loadConfig(process.argv[2]);
 let i=0;
-botConfigs.forEach((botConfig) => {
-    botConfig.host=process.argv[3];
-    botConfig.port=process.argv[4];
+wbotConfigs.forEach((wBotConfig) => {
     setTimeout(function() {
-        workers.push(new worker.Worker("./bot.js", { workerData: botConfig }));
+        workers.push(new worker.Worker("./bot.js", { workerData: wBotConfig }));
     }, 500*i);
     i++;
 })
