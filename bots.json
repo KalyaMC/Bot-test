@@ -1,0 +1,43 @@
+[
+      {
+          "username": "bot1",
+          "version": "1.19.4",
+          "keepAlive": true,
+          "checkTimeoutInterval": 30000,
+          "viewDistance": "short",
+          "modules": [
+              "basics",
+              "navigation"
+          ]
+      },
+      {
+          "username": "bot2",
+          "version": "1.19.4",
+          "keepAlive": true,
+          "checkTimeoutInterval": 30000,
+          "viewDistance": "short",
+          "modules": [
+              "hello"
+          ]
+      },
+      {
+          "username": "bot4",
+          "version": "1.19.4",
+          "keepAlive": true,
+          "checkTimeoutInterval": 30000,
+          "viewDistance": "short",
+          "modules": [
+              "hello"
+          ]
+      },
+      {
+          "username": "bot5",
+          "version": "1.19.4",
+          "keepAlive": true,
+          "checkTimeoutInterval": 30000,
+          "viewDistance": "short",
+          "modules": [
+              "hello"
+          ]
+      }
+  ]
